@@ -47,6 +47,7 @@ import nuclues from './company/nuclues.jpg'
 import ICICICB from './ICICICB.png'
 import BOFAIB from './BOFAIB.png'
 import payb from './payb.png'
+import link from './link.png'
 export {
   logo,
   backend,
@@ -93,5 +94,6 @@ export {
   pcf,
   ICICICB,
   BOFAIB,
-  payb
+  payb,
+  link
 };

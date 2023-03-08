@@ -280,7 +280,7 @@ const projects = [
     source_code_link: "https://www.dbs.com.sg/personal/support/bank-payment-bill-payment.html",
   },
   {
-    name: "e-Provising",
+    name: "e-Provisioning",
     description:
       "eProvisioning sits in the center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities for Bank of America online banking, and mobile apps",
     tags: [

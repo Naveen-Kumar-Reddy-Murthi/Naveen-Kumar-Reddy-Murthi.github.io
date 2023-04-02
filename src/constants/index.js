@@ -14,10 +14,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   dbs,
   wellsfargo,
@@ -34,7 +30,8 @@ import {
   mulesoft,
   payb,
   BOFAIB,
-  ICICICB
+  ICICICB,
+  creator
 } from "../assets";
 
 export const navLinks = [

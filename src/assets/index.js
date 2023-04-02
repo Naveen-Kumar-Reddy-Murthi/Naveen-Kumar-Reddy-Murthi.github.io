@@ -95,5 +95,5 @@ export {
   ICICICB,
   BOFAIB,
   payb,
-  link
+  link,
 };

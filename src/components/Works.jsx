@@ -3,7 +3,6 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -26,7 +25,7 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        {/* <div className='relative w-full h-[230px]'>
           <img
             src={image}
             alt='project_image'
@@ -45,7 +44,7 @@ const ProjectCard = ({
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
@@ -84,8 +83,6 @@ const Works = () => {
           real-world examples of my work. Each project is briefly described with
           links to live websites. It reflects my ability to solve complex problems, 
           work with different technologies, and manage projects effectively.
-          Do Note that attached live websites are channels from where calls originate
-          to the appliations I worked on.
         </motion.p>
       </div>
 

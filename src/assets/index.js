@@ -40,6 +40,8 @@ import ICICICB from './ICICICB.png'
 import BOFAIB from './BOFAIB.png'
 import payb from './payb.png'
 import link from './link.png'
+import cdl from './cdl.png'
+import patent from './patent.png'
 export {
   logo,
   backend,
@@ -81,4 +83,6 @@ export {
   BOFAIB,
   payb,
   link,
+  cdl,
+  patent
 };

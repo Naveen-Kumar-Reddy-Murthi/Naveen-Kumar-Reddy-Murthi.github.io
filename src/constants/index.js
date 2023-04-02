@@ -31,7 +31,9 @@ import {
   payb,
   BOFAIB,
   ICICICB,
-  creator
+  creator,
+  cdl,
+  patent
 } from "../assets";
 
 export const navLinks = [
@@ -44,9 +46,13 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "achievements",
+    title: "Achievements"
+  },
+  {
     id: "contact",
     title: "Contact",
-  },
+  }
 ];
 
 const services = [
@@ -252,11 +258,25 @@ const testimonials = [
   },
 ];
 
+const achievements = [
+  {
+    desc: "Google Cloud Certified Cloud Digital Leader",
+    url: "https://www.credential.net/d3554b23-d6f7-4543-b136-c1217b8fc448?key=fa2575459483564af80f8ad140b8051dfde056c87d7e86dbb86f211810c93d7a",
+    icon: cdl,
+  },
+  {
+    desc: "Patent Holder",
+  url: "https://patents.google.com/patent/US11321063B1/en?inventor=Naveen+Kumar+Reddy+Murthi",
+  icon: patent,
+  },
+  
+];
+
 const projects = [
   {
     name: "PayBill",
     description:
-      "Pay-Bill is used by bank associates to onboard business entities so that they will be able to accept bills from customers. It has several channels including mobile and online banking.",
+      "Pay-Bill is used by bank associates to onboard business entities so that they will be able to accept bills from customers. It also manages payees data. It has several channels including mobile and online banking.",
     tags: [
       {
         name: "spring boot",
@@ -275,10 +295,29 @@ const projects = [
     image: payb,
     source_code_link: "https://www.dbs.com.sg/personal/support/bank-payment-bill-payment.html",
   },
+
   {
-    name: "e-Provisioning",
-    description:
-      "eProvisioning sits in the center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities for Bank of America online banking, and mobile apps",
+    name : "EMMO",
+    description : "An Enterprise Marketing Mix Optimization tool that operationalises marketing mix models to generate optimal marketing plans that achieve business goals by identifying the right budget levels, channel mix, product investment levels, and timing of investments",
+    tags: [
+      {
+        name: ".NET Core",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MSSQL",
+        color: "green-text-gradient",
+      },
+     
+    ],
+  },
+  {
+    name: "E-Provisioning",
+    description:"eProvisioning is a center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities and rules for Bank of America online banking, and mobile apps. It's high through put and low latency application",
     tags: [
       {
         name: "spring-boot",
@@ -319,4 +358,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, achievements };

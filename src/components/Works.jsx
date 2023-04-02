@@ -84,8 +84,8 @@ const Works = () => {
           real-world examples of my work. Each project is briefly described with
           links to live websites. It reflects my ability to solve complex problems, 
           work with different technologies, and manage projects effectively.
-          Do Note that below are front end parts, my work invloved in backend 
-          development of below application. Adding details to just to give you an idea.
+          Do Note that attached live websites are channels from where calls originate
+          to the appliations I worked on.
         </motion.p>
       </div>
 

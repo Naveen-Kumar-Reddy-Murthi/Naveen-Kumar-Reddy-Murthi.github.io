@@ -317,7 +317,7 @@ const projects = [
   },
   {
     name: "E-Provisioning",
-    description:"eProvisioning is a center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities and rules for Bank of America online banking, and mobile apps. It's high through put and low latency application",
+    description:"eProvisioning is the center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities and rules for Bank of America online banking, and mobile apps. It's high through put and low latency application",
     tags: [
       {
         name: "spring-boot",

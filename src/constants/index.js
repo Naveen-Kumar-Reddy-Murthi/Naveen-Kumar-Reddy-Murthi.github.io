@@ -67,7 +67,7 @@ const services = [
   },
   {
     title: "Cloud Native Developer",
-    icon: mobile,
+    icon: creator,
   }
   
 ];

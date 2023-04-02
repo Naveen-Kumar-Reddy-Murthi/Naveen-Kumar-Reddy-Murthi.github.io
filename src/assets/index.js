@@ -31,14 +31,6 @@ import threejs from './tech/threejs.svg';
 import splunk from './tech/splunk.jpg';
 import pcf from './tech/pcf.png'
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
-
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
 import dbs from './company/dbs.png';
 import wellsfargo from './company/wellsfargo.png';
 import bofa from './company/bofa.png';
@@ -70,13 +62,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   dbs,
   wellsfargo,
   atc,

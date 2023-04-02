@@ -52,7 +52,7 @@ const About = () => {
         front-end development using Angular, React, JQuery, TypeScript and
         JavaScript. I'm a quick learner, polyglot programmer and collaborate 
         closely with clients to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. I'm a Let's work together 
+        solutions that solve real-world problems. Let's work together 
         to bring your ideas to life!
       </motion.p>
 

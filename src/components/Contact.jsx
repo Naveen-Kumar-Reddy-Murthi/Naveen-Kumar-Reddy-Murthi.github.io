@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -29,20 +30,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(!form.name || !form.message || ! form.email){
+      alert('Please fill in complete details !');
+      return;
+    }
     setLoading(true);
-
+    
+    
+    
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      
+        "service_3zztjxs",
+        "template_1wa1a4y",
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Work With Naveen",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "work.with.naveen.reddy@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "ZAJTsIRJ2KZjxFS3w"
       )
       .then(
         () => {
@@ -87,7 +95,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

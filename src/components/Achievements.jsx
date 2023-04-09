@@ -23,9 +23,9 @@ const Achievement = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[200px] w-[250px]'
       >
-        <div className='relative w-full h-[300px]'>
+        <div className='relative w-[150px] h-[150px]'>
           <img
             src={icon}
             alt='project_image'
@@ -35,7 +35,7 @@ const Achievement = ({
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(url, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-4 h-4 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={link}

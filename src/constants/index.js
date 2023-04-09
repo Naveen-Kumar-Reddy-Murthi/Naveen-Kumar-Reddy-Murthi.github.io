@@ -175,7 +175,6 @@ const experiences = [
     date: "June 2022 - Present",
     points: [
       "Designed and developed micros services based on cloud native approach",
-      "Developed BPM flow using React for on-boarding and management of business entitie and customer onboarding",
       "Apart from being an active individual contributor, also lead the team including UI, Back-end and QA to oversee the development and release",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -260,7 +259,7 @@ const testimonials = [
 
 const achievements = [
   {
-    desc: "Google Cloud Certified Cloud Digital Leader",
+    desc: "Cloud Digital Leader",
     url: "https://www.credential.net/d3554b23-d6f7-4543-b136-c1217b8fc448?key=fa2575459483564af80f8ad140b8051dfde056c87d7e86dbb86f211810c93d7a",
     icon: cdl,
   },
@@ -311,6 +310,10 @@ const projects = [
       {
         name: "MSSQL",
         color: "green-text-gradient",
+      },
+      {
+        name: "BigQuery",
+        color: "blue-text-gradient",
       },
      
     ],

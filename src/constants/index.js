@@ -46,7 +46,8 @@ import {
   angular,
   opensearch,
   python,
-  postgres
+  postgres,
+  aws
 } from "../assets";
 
 export const navLinks = [
@@ -135,8 +136,8 @@ const technologies = [
     icon: opensearch,
   },
   {
-    name: "Java",
-    icon: java,
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "Oracle",
@@ -234,7 +235,7 @@ const experiences = [
     ],
   },
   {
-    title: "Assistant Vice President",
+    title: "Senior Software Engineer",
     company_name: "WellsFargo, Hyderabad, India",
     icon: wellsfargo,
     iconBg: "#E6DEDD",

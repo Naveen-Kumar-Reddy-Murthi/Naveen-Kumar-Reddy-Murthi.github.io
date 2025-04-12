@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -50,9 +50,9 @@ const About = () => {
         I'm a skilled software developer with experience in Java and other JVM
         based languages like Groovy and Kotlin. I also have experience with
         front-end development using Angular, React, JQuery, TypeScript and
-        JavaScript. I'm a quick learner, polyglot programmer and collaborate 
+        JavaScript. I'm a quick learner, polyglot programmer and collaborate
         closely with clients to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. Let's work together 
+        solutions that solve real-world problems. Let's work together
         to bring your ideas to life!
       </motion.p>
 

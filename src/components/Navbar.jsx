@@ -60,7 +60,7 @@ const Navbar = () => {
               {nav.id === "Resume" ? (
                 <a href="https://drive.usercontent.google.com/uc?id=1wJ9h2RoWcPmtQwwcnZHgoSsaUOSt3opl&export=download" target="_blank" rel="noopener noreferrer">
                   {nav.title}
-                   <img src = {download} alt="download" className="w-4 h-4 object-contain" />
+                   <img src = {download} alt="download" className="w-4 h-4 object-contain inline-block" />
                 </a>
               ) : (
                 <a href={`#${nav.id}`}>{nav.title}</a>

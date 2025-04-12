@@ -337,7 +337,7 @@ const projects = [
   {
     name: "GoBusiness",
     description:
-      "GoBusiness is the go-to platform for businesses in Singapore to access Government e-services and resources. One-stop shop for over 120 government e-services (registration, licenses, grants). Access to personalised recommendations from over 200 e-Advisors on various business needs.",
+      "GoBusiness is the go-to platform for businesses in Singapore to access Government e-services and resources. One-stop shop for over 120 government e-services (registration, licenses, grants).",
     tags: [
       {
         name: "Spring boot",
@@ -416,7 +416,7 @@ const projects = [
   },
   {
     name: "E-Provisioning",
-    description:"eProvisioning is the center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities and rules for Bank of America online banking, and mobile apps. It's high through put and low latency application",
+    description:"eProvisioning is the center of several SORs. It is a middle-ware application that provides customer profile information and several eligibilities and rules for Bank of America online banking, and mobile apps.",
     tags: [
       {
         name: "spring-boot",

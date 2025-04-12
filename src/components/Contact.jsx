@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import CustomAlert from "./CustomAlert";
 
 import { linkedin } from "../assets";
 import { styles } from "../styles";
@@ -18,6 +19,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState({ show: false, type: '', message: '' });
 
   const handleChange = (e) => {
     const { target } = e;
@@ -31,18 +33,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!form.name || !form.message || ! form.email){
-      alert('Please fill in complete details !');
+    if(!form.name || !form.message || !form.email){
+      setAlert({
+        show: true,
+        type: 'error',
+        message: 'Please fill in all details!'
+      });
       return;
     }
     setLoading(true);
     
-    
-    
     emailjs
       .send(
-      
-        "service_3zztjxs",
+        "service_ejrhu05",
         "template_1wa1a4y",
         {
           from_name: form.name,
@@ -56,7 +59,11 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setAlert({
+            show: true,
+            type: 'success',
+            message: 'Thank you for reaching out! I will get back to you as soon as possible.'
+          });
 
           setForm({
             name: "",
@@ -67,20 +74,24 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          setAlert({
+            show: true,
+            type: 'error',
+            message: 'Something went wrong. Please try again later.'
+          });
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+    <>
+      <div
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        >
         
         <div>
           <div className='flex flex-row items-center gap-4'>
@@ -155,6 +166,17 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+      
+      <AnimatePresence>
+        {alert.show && (
+          <CustomAlert
+            type={alert.type}
+            message={alert.message}
+            onClose={() => setAlert({ show: false, type: '', message: '' })}
+          />
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

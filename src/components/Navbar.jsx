@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, download } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -45,7 +45,6 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Naveen Kumar Reddy Murthi &nbsp;
-            {/* <span className='sm:block hidden'> | Fullstack Developer</span> */}
           </p>
         </Link>
 
@@ -58,7 +57,14 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id === "Resume" ? (
+                <a href="https://drive.usercontent.google.com/uc?id=1wJ9h2RoWcPmtQwwcnZHgoSsaUOSt3opl&export=download" target="_blank" rel="noopener noreferrer">
+                  {nav.title}
+                   <img src = {download} alt="download" className="w-4 h-4 object-contain" />
+                </a>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>

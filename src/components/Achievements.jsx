@@ -66,7 +66,7 @@ const Achievements = () => {
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
         {achievements.map((achievement, index) => (
-          <Achievement key={achievement.desc} index={index} {...achievement} />
+          <Achievement key={index} index={index} {...achievement} />
         ))}
       </div>
     </div>

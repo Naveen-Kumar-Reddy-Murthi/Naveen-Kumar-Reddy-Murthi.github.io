@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+import { linkedin } from "../assets";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -80,9 +81,24 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+        
+        <div>
+          <div className='flex flex-row items-center gap-4'>
+            <h3 className={styles.sectionHeadText}>Connect</h3>
+            <div
+              onClick={() => window.open("https://www.linkedin.com/in/naveen-kumar-reddy7/", "_blank")}
+              className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={linkedin}
+                alt='source code'
+                className='w-full h-full object-contain'
+              />
+            </div>
+          </div>
+        </div>
+        <div>
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -129,6 +145,7 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        </div>
       </motion.div>
 
       <motion.div

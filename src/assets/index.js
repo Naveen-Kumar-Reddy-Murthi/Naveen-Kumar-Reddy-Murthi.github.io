@@ -32,6 +32,7 @@ import splunk from './tech/splunk.jpg';
 import pcf from './tech/pcf.png'
 
 import dbs from './company/dbs.png';
+import govtech from './company/govtech.png';
 import wellsfargo from './company/wellsfargo.png';
 import bofa from './company/bofa.png';
 import atc from './company/atc.png'
@@ -42,6 +43,20 @@ import payb from './payb.png'
 import link from './link.png'
 import cdl from './cdl.png'
 import patent from './patent.png'
+import awsaip from './awsaip.png'
+import awscp from './awscp.png'
+import awssaa from './awssaa.png'
+import ghcp from './ghcp.png'
+import hf from './hf.png'
+import nusiss from './nusiss.png'
+import ai from './ai.png'
+import nusiss1 from './nusiss1.png'
+import linkedin from './linkedin.png'
+import download from  './download.png'
+import resume from './resume.png'
+import resume1 from './resume1.png'
+import cv from './cv.png'
+
 export {
   logo,
   backend,
@@ -84,5 +99,19 @@ export {
   payb,
   link,
   cdl,
-  patent
+  patent,
+  govtech,
+  awsaip,
+  awscp,
+  awssaa,
+  ghcp,
+  hf,
+  nusiss,
+  ai,
+  nusiss1,
+  linkedin,
+  download,
+  resume,
+  resume1,
+  cv
 };

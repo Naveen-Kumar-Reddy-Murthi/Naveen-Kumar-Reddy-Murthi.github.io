@@ -33,7 +33,16 @@ import {
   ICICICB,
   creator,
   cdl,
-  patent
+  patent,
+  govtech,
+  hf,
+  ghcp,
+  awsaip,
+  awssaa,
+  nusiss,
+  awscp,
+  ai,
+  nusiss1
 } from "../assets";
 
 export const navLinks = [
@@ -52,6 +61,10 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "Resume",
+    title: "Resume",
   }
 ];
 
@@ -71,6 +84,11 @@ const services = [
   {
     title: "Cloud Native Developer",
     icon: creator,
+  }
+  ,
+  {
+    title: "AI Enthusiast",
+    icon: ai,
   }
   
 ];
@@ -167,12 +185,26 @@ const technologies = [
 ];
 
 const experiences = [
+
+  {
+    title: "Senior Software Engineer",
+    company_name: "GovTech, Singapore through PALO IT",
+    icon: govtech,
+    iconBg: "#383E56",
+    date: "May 2023 - Present",
+    points: [
+      "Contributed as a full-stack engineer crafting features using Kotlin, React, Python, and AWS",
+      "Integrated different govt agencies with go business.",
+      "Prod deployment and support.",
+    ],
+  },
+
   {
     title: "Technical Lead",
-    company_name: "DBS Bank, Singapore",
+    company_name: "DBS Bank, Singapore through HCLTech",
     icon: dbs,
     iconBg: "#383E56",
-    date: "June 2022 - Present",
+    date: "June 2022 - May 2023",
     points: [
       "Designed and developed micros services based on cloud native approach",
       "Apart from being an active individual contributor, also lead the team including UI, Back-end and QA to oversee the development and release",
@@ -259,12 +291,42 @@ const testimonials = [
 
 const achievements = [
   {
-    desc: "Cloud Digital Leader",
+    // desc: "Huggingface AI Agents Fundamentals",
+    url: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/mnreddy7/2025-03-26.png",
+    icon: hf,
+  },
+  {
+    // desc: "GitHub Copilot",
+    url: "https://www.credly.com/badges/f9e4f53c-a747-4536-969d-b8a7042a35e2",
+    icon: ghcp,
+  },
+  {
+    // desc: "AWS Certified AI Practitioner Early Adopter",
+    url: "https://www.credly.com/badges/5c21d30f-4430-4851-adbf-d2d90163a7da",
+    icon: awsaip,
+  },
+  {
+    // desc: "AWS Certified Solutions Architect – Associate",
+    url: "https://www.credly.com/badges/77b3684e-e326-43c4-8fe1-b826270b8545",
+    icon: awssaa,
+  },
+  {
+    // desc: "NUS-ISS ICT Assessment Certification for Software Developer",
+    url: "https://dashboard.accredify.io/verify?id=4785a562-a029-4b15-b22e-6aa827697e55",
+    icon: nusiss1,
+  },
+  {
+    // desc: "AWS Certified Cloud Practitioner",
+    url: "https://www.credly.com/badges/8f85f5ad-309d-4d61-b571-e1c12d3d8bc0",
+    icon: awscp,
+  },
+  {
+    // desc: "Cloud Digital Leader",
     url: "https://www.credential.net/d3554b23-d6f7-4543-b136-c1217b8fc448?key=fa2575459483564af80f8ad140b8051dfde056c87d7e86dbb86f211810c93d7a",
     icon: cdl,
   },
   {
-    desc: "Patent Holder",
+    // desc: "Patents",
   url: "https://patents.google.com/patent/US11321063B1/en?inventor=Naveen+Kumar+Reddy+Murthi",
   icon: patent,
   },
@@ -272,6 +334,40 @@ const achievements = [
 ];
 
 const projects = [
+  {
+    name: "GoBusiness",
+    description:
+      "GoBusiness is the go-to platform for businesses in Singapore to access Government e-services and resources. One-stop shop for over 120 government e-services (registration, licenses, grants). Access to personalised recommendations from over 200 e-Advisors on various business needs.",
+    tags: [
+      {
+        name: "Spring boot",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Angular",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "black-text",
+      },
+      {
+        name: "Postgres",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "red-text-gradient",
+      },
+     
+    ],
+    image: payb,
+    source_code_link: "https://www.dbs.com.sg/personal/support/bank-payment-bill-payment.html",
+  },
   {
     name: "PayBill",
     description:

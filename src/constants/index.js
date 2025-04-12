@@ -42,7 +42,11 @@ import {
   nusiss,
   awscp,
   ai,
-  nusiss1
+  nusiss1,
+  angular,
+  opensearch,
+  python,
+  postgres
 } from "../assets";
 
 export const navLinks = [
@@ -95,6 +99,42 @@ const services = [
 
 const technologies = [
   {
+    name: "Kotlin",
+    icon: kotlin,
+  },
+  {
+    name: "Postgres",
+    icon: postgres,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+    {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "AngularJS",
+    icon: angular,
+  },
+    {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "OpenSearch",
+    icon: opensearch,
+  },
+  {
     name: "Java",
     icon: java,
   },
@@ -106,26 +146,16 @@ const technologies = [
     name: "Kafka",
     icon: kafka,
   },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Kotlin",
-    icon: kotlin,
-  },
-  {
-    name: "Mulesoft",
-    icon: mulesoft,
-  },
-  {
-    name: "GCP",
-    icon: gcp,
-  },
+  
+  
+  // {
+  //   name: "Mulesoft",
+  //   icon: mulesoft,
+  // },
+  // {
+  //   name: "GCP",
+  //   icon: gcp,
+  // },
   // {
   //   name: "PCF",
   //   icon: pcf,
@@ -135,14 +165,14 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
-    name: "splunk",
-    icon: splunk,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
+  // {
+  //   name: "splunk",
+  //   icon: splunk,
+  // },
   // {
   //   name: "HTML 5",
   //   icon: html,
@@ -152,15 +182,7 @@ const technologies = [
   //   icon: css,
   // },
   
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
+
   // {
   //   name: "Tailwind CSS",
   //   icon: tailwind,
@@ -173,10 +195,10 @@ const technologies = [
   //   name: "MongoDB",
   //   icon: mongodb,
   // },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   // {
   //   name: "figma",
   //   icon: figma,

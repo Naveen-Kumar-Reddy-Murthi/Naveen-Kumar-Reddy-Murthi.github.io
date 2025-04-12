@@ -56,6 +56,11 @@ import download from  './download.png'
 import resume from './resume.png'
 import resume1 from './resume1.png'
 import cv from './cv.png'
+import aws from './tech/aws.svg'
+import python from './tech/python.png'
+import angular from './tech/angular.png'
+import opensearch from './tech/opensearch.png' 
+import postgres from './tech/postgres.png'
 
 export {
   logo,
@@ -113,5 +118,10 @@ export {
   download,
   resume,
   resume1,
-  cv
+  cv,
+  aws,
+  python,
+  angular,
+  opensearch,
+  postgres
 };

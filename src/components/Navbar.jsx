@@ -58,7 +58,7 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               {nav.id === "Resume" ? (
-                <a href="https://drive.usercontent.google.com/uc?id=1wJ9h2RoWcPmtQwwcnZHgoSsaUOSt3opl&export=download" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.usercontent.google.com/uc?id=1kQZY-kqXSYa2c06qiy8QoRj9j6pcJl3v&export=download" target="_blank" rel="noopener noreferrer">
                   {nav.title}
                    <img src = {download} alt="download" className="w-4 h-4 object-contain inline-block" />
                 </a>
